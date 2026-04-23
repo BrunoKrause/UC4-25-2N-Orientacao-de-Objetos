@@ -53,13 +53,13 @@ export let devs: freelancer[] = [
         feedbacks: []
     },
     {
-        nome: 'Pedro WIlges',
+        nome: 'Pedro Ferraz',
         listaServicos: ['1 - Fix Bugs', '2 - Landing Page','4 - Boost perfomance'],
         nivel: 'P',
         feedbacks: []
     },
     {
-        nome: 'Joao Fiuza',
+        nome: 'Jose Arthur',
         listaServicos: ['1 - Fix Bugs','2 - Integrate API','3 - Landing page','5 - Site institucional'],
         nivel: 'P',
         feedbacks: []

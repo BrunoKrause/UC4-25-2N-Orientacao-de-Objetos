@@ -3,37 +3,37 @@ import { freelancer } from "../programador/script";
 export let editor: freelancer[] = [
     {
         nome: 'Kauanny Ferreira',
-        listaServicos: ['1 - Edit Social Media', '2 - Edit Videos', '3 - Fix Color',],
+        listaServicos: ['1 - Edit Social Media', '2 - Edit Videos', '5 - Thumbnail'],
         nivel: 'Iniciante',
         feedbacks: []
     },
     {
         nome: 'Deividson Alves',
-        listaServicos: ['1 - Edit Social Media', '2 - Edit Videos', '3 - Remove Background', '4 - Thumbnail'],
+        listaServicos: ['1 - Edit Social Media', '2 - Edit Videos', '4 - Remove Background'],
         nivel: 'Iniciante',
         feedbacks: []
     },
     {
         nome: 'Railane Gomes',
-        listaServicos: ['1 - Fix Color', '2 - Remove Background', '3 - Thumbnail'],
+        listaServicos: ['3 - Fix Color', '4 - Remove Background', '5 - Thumbnail'],
         nivel: 'Iniciante',
         feedbacks: []
     },
     {
         nome: 'Jucilene Batista',
-        listaServicos: ['1 - Edit Videos', '2 - Fix Color', '3 - Remove Background', '4 - Thumbnail'],
+        listaServicos: ['2 - Edit Videos', '3 - Fix Color', '4 - Remove Background', '5 - Thumbnail'],
         nivel: 'Intermediario',
         feedbacks: []
     },
     {
         nome: 'Cleiton Rodrigues',
-        listaServicos: ['1 - Edit Social Media', '2 - Edit Videos', '3 - Remove Background', '4 - Thumbnail'],
+        listaServicos: ['1 - Edit Social Media', '2 - Edit Videos', '4 - Remove Background', '5 - Thumbnail'],
         nivel: 'Intermediario',
         feedbacks: []
     },
     {
         nome: 'Wescley Martins',
-        listaServicos: ['1 - Fix Color', '2 - Rm Background', '3 - Thumbnail'],
+        listaServicos: ['3 - Fix Color', '4 - Remove Background', '5 - Thumbnail'],
         nivel: 'Intermediario',
         feedbacks: []
     },
@@ -45,7 +45,7 @@ export let editor: freelancer[] = [
     },
     {
         nome: 'Admilson Carvalho',
-        listaServicos: ['1 - Edit Social Media', '2 - Edit Videos', '3 - Fix Color', '4 - Thumbnail'],
+        listaServicos: ['1 - Edit Social Media', '2 - Edit Videos', '3 - Fix Color', '5 - Thumbnail'],
         nivel: 'Profissional',
         feedbacks: []
     },

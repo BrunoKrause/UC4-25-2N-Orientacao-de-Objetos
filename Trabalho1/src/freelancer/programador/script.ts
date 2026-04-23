@@ -12,13 +12,13 @@ export interface freelancer {
 export let devs: freelancer[] = [
     {
         nome: 'Caua Lima',
-        listaServicos: ['1 - Fix Bugs', '2 - Landing Page',],
+        listaServicos: ['2 - Integrate API', '3 - Landing Page',],
         nivel: 'J',
         feedbacks: []
     },
     {
         nome: 'Carlos Eduardo',
-        listaServicos: ['1 - Landing Page','2 - Integrate API'],
+        listaServicos: ['5 - Site institucional','3 - Landing Page','2 - Integrate API'],
         nivel: 'J',
         feedbacks: []
     },
@@ -30,37 +30,37 @@ export let devs: freelancer[] = [
     },
     {
         nome: 'Joao Silva',
-        listaServicos: ['1 - Fix Bugs','2 - Integrate API'],
+        listaServicos: ['1 - Fix Bugs','2 - Integrate API','3 - Landing page','5 - Site institucional'],
         nivel: 'S',
         feedbacks: []
     },
     {
         nome: 'Felipe Flores',
-        listaServicos: ['1 - Fix Bugs', '2 - Landing Page','3 - Integrate API'],
+        listaServicos: ['1 - Fix Bugs','2 - Integrate API','3 - Landing Page','4 - Boost performance','5 - Site institucional'],
         nivel: 'S',
         feedbacks: []
     },
     {
         nome: 'Bruno Krause',
-        listaServicos: ['1 - Fix Bugs','2 - Landing Page','3 - Integrate API'],
+        listaServicos: ['1 - Fix Bugs','2 - Integrate API','3 - Landing Page','4 - Boost performance'],
         nivel: 'S',
         feedbacks: []
     },
     {
         nome: 'Eduardo Alfonso',
-        listaServicos: ['1 - Fix Bugs','2 - Integrate API'],
+        listaServicos: ['5 - Site institucional','2 - Integrate API','3 - Landing page'],
         nivel: 'P',
         feedbacks: []
     },
     {
         nome: 'Pedro WIlges',
-        listaServicos: ['1 - Fix Bugs', '2 - Landing Page'],
+        listaServicos: ['1 - Fix Bugs', '2 - Landing Page','4 - Boost perfomance'],
         nivel: 'P',
         feedbacks: []
     },
     {
         nome: 'Joao Fiuza',
-        listaServicos: ['1 - Fix Bugs'],
+        listaServicos: ['1 - Fix Bugs','2 - Integrate API','3 - Landing page','5 - Site institucional'],
         nivel: 'P',
         feedbacks: []
     }

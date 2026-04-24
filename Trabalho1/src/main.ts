@@ -1,102 +1,318 @@
 import { devs } from "./freelancer/programador/script";
-import { ExtraUrgencia } from "./adicionais/Urgencia";
-import { fixBugs } from "./servicos/programador/fixBugs";
+import { editor } from "./freelancer/editor/script";
+import { designer } from "./freelancer/designer/script";
 import rl from "readline-sync"
 
-console.clear()
-console.log(`
-    Escolha um serviço que você quer fazer:
-    1 - Fix Bugs
-    2 - Integrate API
-    3 - Landing Page
-    4 - Boost Performance
-    5 - Site Institucional
-    0 - Sair
-`)
 
-let servicoEscolhido = rl.questionInt('Coloque o Servico escolhido: ')
-let cont = 0
+
+console.log(`
+=== BEM VINDO AO FREELANCERS ===
+
+    ESCOLHA QUAL TIPO GOSTARIA DE VER
+
+    1 - EDITOR
+    2 - DESIGNER
+    3 - PROGRAMADOR
+`)
+let escolhaTipo = rl.questionInt('Digite o número do tipo que você precisa: ')
+let servicoEscolhido = 0
+let freeEscolhido = 0
+function lsDevs() {
+    switch (servicoEscolhido) {
+        case 1:
+            for( let dev of devs){
+                if (dev.listaServicos.includes('1 - Fix Bugs')) {
+                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 2:
+            for( let dev of devs){
+                if (dev.listaServicos.includes('2 - Integrate API')) {
+                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 3:
+            for( let dev of devs){
+                if (dev.listaServicos.includes('3 - Landing Page')) {
+                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 4:
+            for( let dev of devs){
+                if (dev.listaServicos.includes('4 - Boost Performance')) {
+                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 5:
+            for( let dev of devs){
+                if (dev.listaServicos.includes('5 - Site institucional')) {
+                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 0:
+            console.clear()
+            break
+        default:
+            console.log('Opção não válida.')
+            break
+    }
+}
+function lsEditor() {
+    switch (servicoEscolhido) {
+        case 1:
+            for( let edi of editor){
+                if (edi.listaServicos.includes('1 - Fix Bugs')) {
+                    console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${edi.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 2:
+            for( let edi of editor){
+                if (edi.listaServicos.includes('2 - Integrate API')) {
+                    console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${edi.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 3:
+            for( let edi of editor){
+                if (edi.listaServicos.includes('3 - Landing Page')) {
+                    console.log(`${editor.indexOf(edi)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 4:
+            for( let dev of devs){
+                if (dev.listaServicos.includes('4 - Boost Performance')) {
+                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 5:
+            for( let dev of devs){
+                if (dev.listaServicos.includes('5 - Site institucional')) {
+                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 0:
+            console.clear()
+            break
+        default:
+            console.log('Opção não válida.')
+            break
+    }
+}
+function lsDesigner() {
+    switch (servicoEscolhido) {
+        case 1:
+            for( let design of designer){
+                if (edi.listaServicos.includes('1 - Fix Bugs')) {
+                    console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${edi.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 2:
+            for( let edi of editor){
+                if (edi.listaServicos.includes('2 - Integrate API')) {
+                    console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${edi.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 3:
+            for( let edi of editor){
+                if (edi.listaServicos.includes('3 - Landing Page')) {
+                    console.log(`${editor.indexOf(edi)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 4:
+            for( let dev of devs){
+                if (dev.listaServicos.includes('4 - Boost Performance')) {
+                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 5:
+            for( let dev of devs){
+                if (dev.listaServicos.includes('5 - Site institucional')) {
+                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+    ====================
+    *Servicos ofertados*  
+    ====================
+    ${dev.listaServicos.join(' | ')}\n
+    --------------------------------`)
+                }
+            }
+            break
+        case 0:
+            console.clear()
+            break
+        default:
+            console.log('Opção não válida.')
+            break
+    }
+}
+
+switch(escolhaTipo) {
+    case 1:
+        console.log(`
+            Escolha um serviço que você quer fazer:
+            1 - Edit social media
+            2 - Edit vídeos
+            3 - Fix color 
+            4 - Remove Background
+            5 - Thumbnail
+        `)
+        servicoEscolhido = rl.questionInt('Coloque o Servico escolhido: ')
+        break
+    case 2:
+        console.log(`
+            Escolha um serviço que você quer fazer
+            1 - Business card
+            2 - Social media design
+            3 - Flyer
+            4 - Create logo
+            5 - Website layout
+        `)
+        servicoEscolhido = rl.questionInt('Coloque o Servico escolhido: ')
+        break
+    case 3:
+        console.log(`
+            Escolha um serviço que você quer fazer:
+            1 - Fix Bugs
+            2 - Integrate API
+            3 - Landing Page
+            4 - Boost Performance
+            5 - Site Institucional
+        `)
+        servicoEscolhido = rl.questionInt('Coloque o Servico escolhido: ')
+        lsDevs()
+        break
+    default:
+        break
+}
+
+
+
+console.clear()
+
 
 console.log(`
 ======================
 
 `)
 
-switch (servicoEscolhido) {
-    case 1:
-        for( let dev of devs){
-            if (dev.listaServicos.includes('1 - Fix Bugs')) {
-                cont++
-                console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
-====================
-*Servicos ofertados*  
-====================
-${dev.listaServicos.join(' | ')}\n`)
-            }
-        }
-        break
-    case 2:
-        for( let dev of devs){
-            if (dev.listaServicos.includes('2 - Integrate API')) {
-                cont++
-                console.log(`${cont} - ${dev.nome}, ${dev.nivel}  
-====================
-*Servicos ofertados*  
-====================
-${dev.listaServicos.join(' | ')}\n`)
-            }
-        }
-        break
-    case 3:
-        for( let dev of devs){
-            if (dev.listaServicos.includes('3 - Landing Page')) {
-                cont++
-                console.log(`${cont} - ${dev.nome}, ${dev.nivel}  
-====================
-*Servicos ofertados*  
-====================
-${dev.listaServicos.join(' | ')}\n`)
-            }
-        }
-        break
-    case 4:
-        for( let dev of devs){
-            if (dev.listaServicos.includes('4 - Boost Performance')) {
-                cont++
-                console.log(`${cont} - ${dev.nome}, ${dev.nivel}  
-====================
-*Servicos ofertados*  
-====================
-${dev.listaServicos.join(' | ')}\n`)
-            }
-        }
-        break
-    case 5:
-        for( let dev of devs){
-            if (dev.listaServicos.includes('5 - Site Institucional')) {
-                cont++
-                console.log(`${cont} - ${dev.nome}, ${dev.nivel}  
-====================
-*Servicos ofertados*  
-====================
-${dev.listaServicos.join(' | ')}\n`)
-            }
-        }
-        break
-    case 0:
-        console.clear()
-        break
-    default:
-        console.log('Opção não válida.')
-        break
-}
+
 console.log(`
 LEMBRE QUE PROFISSIONAIS MAIS QUALIFICADOS, TEM CUSTOS MAIS ALTOS
 `)
-let freeEscolhido = rl.questionInt('Escolha com quem quer fazer o servico: ')
+
+console.clear()
 
 switch(freeEscolhido) {
     case 0:
         console.log(devs[0])
+        break
+    case 1:
+        console.log(devs[1])
+        break
+    case 2:
+        console.log(devs[2])
+        break
+    case 3:
+        console.log(devs[3])
+        break
+    case 4:
+        console.log(devs[4])
+        break
+    case 5:
+        console.log(devs[5])
+        break
+    case 6:
+        console.log(devs[6])
+        break
+    case 7:
+        console.log(devs[7])
+        break
+    case 8:
+        console.log(devs[8])
+        break
+    default:
+        console.log('Opcao inválida')
         break
 }

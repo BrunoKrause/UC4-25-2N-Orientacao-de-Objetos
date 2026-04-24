@@ -1,6 +1,4 @@
 import { feedback } from "../../feedback/feedback"
-import { feedback1 } from "../../feedback/feedback"
-import { feedback2 } from "../../feedback/feedback"
 
 export interface freelancer {
     nome: string

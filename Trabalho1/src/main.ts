@@ -91,7 +91,7 @@ function lsEditor() {
     switch (servicoEscolhido) {
         case 1:
             for( let edi of editor){
-                if (edi.listaServicos.includes('1 - Fix Bugs')) {
+                if (edi.listaServicos.includes('1 - Edit Social Media')) {
                     console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
     ====================
     *Servicos ofertados*  
@@ -103,7 +103,7 @@ function lsEditor() {
             break
         case 2:
             for( let edi of editor){
-                if (edi.listaServicos.includes('2 - Integrate API')) {
+                if (edi.listaServicos.includes('2 - Edit Videos')) {
                     console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
     ====================
     *Servicos ofertados*  
@@ -115,36 +115,36 @@ function lsEditor() {
             break
         case 3:
             for( let edi of editor){
-                if (edi.listaServicos.includes('3 - Landing Page')) {
-                    console.log(`${editor.indexOf(edi)} - ${dev.nome}, ${dev.nivel}  
+                if (edi.listaServicos.includes('3 - Fix Colors')) {
+                    console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
     ====================
     *Servicos ofertados*  
     ====================
-    ${dev.listaServicos.join(' | ')}\n
+    ${edi.listaServicos.join(' | ')}\n
     --------------------------------`)
                 }
             }
             break
         case 4:
-            for( let dev of devs){
-                if (dev.listaServicos.includes('4 - Boost Performance')) {
-                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+            for( let edi of editor){
+                if (edi.listaServicos.includes('4 - Remove Background')) {
+                    console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
     ====================
     *Servicos ofertados*  
     ====================
-    ${dev.listaServicos.join(' | ')}\n
+    ${edi.listaServicos.join(' | ')}\n
     --------------------------------`)
                 }
             }
             break
         case 5:
-            for( let dev of devs){
-                if (dev.listaServicos.includes('5 - Site institucional')) {
-                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+            for( let edi of editor){
+                if (edi.listaServicos.includes('5 - Thumbnail')) {
+                    console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
     ====================
     *Servicos ofertados*  
     ====================
-    ${dev.listaServicos.join(' | ')}\n
+    ${edi.listaServicos.join(' | ')}\n
     --------------------------------`)
                 }
             }
@@ -161,60 +161,60 @@ function lsDesigner() {
     switch (servicoEscolhido) {
         case 1:
             for( let design of designer){
-                if (edi.listaServicos.includes('1 - Fix Bugs')) {
-                    console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
+                if (design.listaServicos.includes('1 - Business Card')) {
+                    console.log(`${designer.indexOf(design)} - ${design.nome}, ${design.nivel}  
     ====================
     *Servicos ofertados*  
     ====================
-    ${edi.listaServicos.join(' | ')}\n
+    ${design.listaServicos.join(' | ')}\n
     --------------------------------`)
                 }
             }
             break
         case 2:
-            for( let edi of editor){
-                if (edi.listaServicos.includes('2 - Integrate API')) {
-                    console.log(`${editor.indexOf(edi)} - ${edi.nome}, ${edi.nivel}  
+            for( let design of designer){
+                if (design.listaServicos.includes('2 - Social Media Design')) {
+                    console.log(`${designer.indexOf(design)} - ${design.nome}, ${design.nivel}  
     ====================
     *Servicos ofertados*  
     ====================
-    ${edi.listaServicos.join(' | ')}\n
+    ${design.listaServicos.join(' | ')}\n
     --------------------------------`)
                 }
             }
             break
         case 3:
-            for( let edi of editor){
-                if (edi.listaServicos.includes('3 - Landing Page')) {
-                    console.log(`${editor.indexOf(edi)} - ${dev.nome}, ${dev.nivel}  
+            for( let design of designer){
+                if (design.listaServicos.includes('3 - Flyer')) {
+                    console.log(`${designer.indexOf(design)} - ${design.nome}, ${design.nivel}  
     ====================
     *Servicos ofertados*  
     ====================
-    ${dev.listaServicos.join(' | ')}\n
+    ${design.listaServicos.join(' | ')}\n
     --------------------------------`)
                 }
             }
             break
         case 4:
-            for( let dev of devs){
-                if (dev.listaServicos.includes('4 - Boost Performance')) {
-                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+            for( let design of designer){
+                if (design.listaServicos.includes('4 - Create Logo')) {
+                    console.log(`${designer.indexOf(design)} - ${design.nome}, ${design.nivel}  
     ====================
     *Servicos ofertados*  
     ====================
-    ${dev.listaServicos.join(' | ')}\n
+    ${design.listaServicos.join(' | ')}\n
     --------------------------------`)
                 }
             }
             break
         case 5:
-            for( let dev of devs){
-                if (dev.listaServicos.includes('5 - Site institucional')) {
-                    console.log(`${devs.indexOf(dev)} - ${dev.nome}, ${dev.nivel}  
+            for( let design of designer){
+                if (design.listaServicos.includes('5 - Website Layout')) {
+                    console.log(`${designer.indexOf(design)} - ${design.nome}, ${design.nivel}  
     ====================
     *Servicos ofertados*  
     ====================
-    ${dev.listaServicos.join(' | ')}\n
+    ${design.listaServicos.join(' | ')}\n
     --------------------------------`)
                 }
             }

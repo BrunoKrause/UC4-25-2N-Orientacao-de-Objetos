@@ -1,8 +1,10 @@
 import { feedback } from "../../feedback/feedback"
+import { serviceModel } from "../../servicos/model"
+import { Servico } from "../../servicos/model"
 
 export interface freelancer {
     nome: string
-    listaServicos: string[]
+    listaServicos: Servico[]
     nivel: 'Júnior' | 'Pleno' | 'Sênior' | 'Iniciante' | 'Intermediario' | 'Profissional'
     feedbacks: feedback[]
 }
@@ -10,55 +12,62 @@ export interface freelancer {
 export let devs: freelancer[] = [
     {
         nome: 'Caua Lima',
-        listaServicos: ['2 - Integrate API', '3 - Landing Page',],
+        listaServicos: [{
+            nome: '3 - Landing Page',
+            preco: 800
+        },
+        {
+            nome: '2 - Integrate API',
+            preco: 500
+        }],
         nivel: 'Júnior',
         feedbacks: []
     },
     {
         nome: 'Carlos Eduardo',
-        listaServicos: ['5 - Site institucional','3 - Landing Page','2 - Integrate API'],
+        listaServicos: ['5 - Site institucional', '3 - Landing Page', '2 - Integrate API'],
         nivel: 'Júnior',
         feedbacks: []
     },
     {
         nome: 'Miguel Gustavo',
-        listaServicos: ['1 - Fix Bugs','2 - Integrate API'],
+        listaServicos: ['1 - Fix Bugs', '2 - Integrate API'],
         nivel: 'Júnior',
         feedbacks: []
     },
     {
         nome: 'Joao Silva',
-        listaServicos: ['1 - Fix Bugs','2 - Integrate API','3 - Landing page','5 - Site institucional'],
+        listaServicos: ['1 - Fix Bugs', '2 - Integrate API', '3 - Landing page', '5 - Site institucional'],
         nivel: 'Sênior',
         feedbacks: []
     },
     {
         nome: 'Felipe Flores',
-        listaServicos: ['1 - Fix Bugs','2 - Integrate API','3 - Landing Page','4 - Boost performance','5 - Site institucional'],
+        listaServicos: ['1 - Fix Bugs', '2 - Integrate API', '3 - Landing Page', '4 - Boost performance', '5 - Site institucional'],
         nivel: 'Sênior',
         feedbacks: []
     },
     {
         nome: 'Bruno Krause',
-        listaServicos: ['1 - Fix Bugs','2 - Integrate API','3 - Landing Page','4 - Boost performance'],
+        listaServicos: ['1 - Fix Bugs', '2 - Integrate API', '3 - Landing Page', '4 - Boost performance'],
         nivel: 'Sênior',
         feedbacks: []
     },
     {
         nome: 'Eduardo Alfonso',
-        listaServicos: ['5 - Site institucional','2 - Integrate API','3 - Landing page'],
+        listaServicos: ['5 - Site institucional', '2 - Integrate API', '3 - Landing page'],
         nivel: 'Pleno',
         feedbacks: []
     },
     {
         nome: 'Pedro Ferraz',
-        listaServicos: ['1 - Fix Bugs', '2 - Landing Page','4 - Boost perfomance'],
+        listaServicos: ['1 - Fix Bugs', '2 - Landing Page', '4 - Boost perfomance'],
         nivel: 'Pleno',
         feedbacks: []
     },
     {
         nome: 'Jose Arthur',
-        listaServicos: ['1 - Fix Bugs','2 - Integrate API','3 - Landing page','5 - Site institucional'],
+        listaServicos: ['1 - Fix Bugs', '2 - Integrate API', '3 - Landing page', '5 - Site institucional'],
         nivel: 'Pleno',
         feedbacks: []
     }

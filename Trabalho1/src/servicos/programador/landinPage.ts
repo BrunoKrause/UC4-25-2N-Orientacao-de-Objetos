@@ -1,9 +1,11 @@
 import { serviceModel } from "../model";
 
 export class landingPage implements serviceModel {
+    nome: string
     preco: number
 
-    constructor(preco: number){
+    constructor(nome: string, preco: number){
+        this.nome = nome
         this.preco = preco
     }
     getDescricao(): string {

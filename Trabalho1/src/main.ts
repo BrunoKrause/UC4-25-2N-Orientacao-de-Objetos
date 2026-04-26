@@ -4,6 +4,9 @@ import { designer } from "./freelancer/designer/script";
 import rl from "readline-sync"
 import { serviceModel, Servico } from "./servicos/model";
 import { ExtraUrgencia } from "./adicionais/Urgencia";
+import { Prioridade } from "./adicionais/Prioridade";
+import { Bonus } from "./adicionais/Bonus";
+import { feedback } from "./feedback/feedback";
 
 
 
@@ -13,15 +16,74 @@ let servicoEscolhidoS = ''
 let servicoEscolhidoObj: serviceModel
 let freeEscolhido = 0
 let freeEscolhidoObj: freelancer
-
+let adicionalEscolhido = 0
+let continuar = 0
 
 
 function finishing() {
+
     console.log(`
+        Pode selecionar adicionais para o seu produto:
+        1 - Urgencia (Tempo de entrega reduzido pela metade | + 50% no valor)
+        2 - Prioridade (O projeto passa na frente de outros na agenda do prestador. | + 30% no valor)
+        3 - Bonus (Inclusão de algo a mais. | + 15% no valor)
+        0 - Voltar
+        `)
+    continuar = rl.questionInt(`
+         Pretende adicionar algum?
+         1 - Sim
+         2 - Nao, finalizar
+
+        Digite sua resposta: `)
+    if (continuar === 1){
+        adicionalEscolhido = rl.questionInt(`
+        Qual gostaria de selecionar? `)
+        switch(adicionalEscolhido){
+            case 1:
+                servicoEscolhidoObj = new ExtraUrgencia(servicoEscolhidoObj)
+                break
+            case 2:
+                servicoEscolhidoObj = new Prioridade(servicoEscolhidoObj)
+                break
+            case 3:
+                servicoEscolhidoObj = new Bonus(servicoEscolhidoObj)
+                break
+            case 0:
+                finishing()
+                break
+            default:
+                console.log('opcao invalida')
+                break
+        }
+    } 
+    console.clear()
+    console.log(`
+        Resumo:
         ${freeEscolhidoObj.nome}
         ===================
-        ${servicoEscolhidoObj.getDescricao()} | ${servicoEscolhidoObj.getPreco()}
+        ${servicoEscolhidoObj.getDescricao()} 
+        R$${servicoEscolhidoObj.getPreco()}
         `)
+    continuar = rl.questionInt(`
+        1 - Finalizar
+        2 - Recomeçar
+
+        Digite sua resposta: `)
+    switch(continuar){
+        case 1:
+            let feedbackFree: feedback = {
+                comentario: rl.question('Deixe seu comentario sobre o servico do Freelancer: '),
+                nota: rl.questionInt('Deixe a sua nota: ')
+            }
+            freeEscolhidoObj.feedbacks.push(feedbackFree)
+            break
+        case 2:
+            start()
+            break
+        default:
+            console.log('Opçao invalida')
+            break
+    }
 }
 function showDev() {
     switch(freeEscolhido) {
@@ -560,6 +622,7 @@ function start() {
                 0 - Voltar
             `)
             servicoEscolhido = rl.questionInt('Coloque o Servico escolhido: ')
+            console.log(`\n`)
             lsEditor()
             break
         case 2:
@@ -573,6 +636,7 @@ function start() {
                 0 - Voltar
             `)
             servicoEscolhido = rl.questionInt('Coloque o Servico escolhido: ')
+            console.log(`\n`)
             lsDesigner()
             break
         case 3:
@@ -586,6 +650,7 @@ function start() {
                 0 - Voltar
             `)
             servicoEscolhido = rl.questionInt('Coloque o Servico escolhido: ')
+            console.log(`\n`)
             lsDevs()
             break
         default:
@@ -594,3 +659,4 @@ function start() {
 }
 
 start()
+console.log(devs[0]?.feedbacks)

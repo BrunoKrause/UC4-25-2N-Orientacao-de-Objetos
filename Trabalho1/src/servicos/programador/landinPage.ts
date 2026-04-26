@@ -1,6 +1,6 @@
-import { serviceModel } from "../model";
+import { serviceModel, Servico } from "../model";
 
-export class landingPage implements serviceModel {
+export class landingPage implements Servico {
     nome: string
     preco: number
 
@@ -9,7 +9,7 @@ export class landingPage implements serviceModel {
         this.preco = preco
     }
     getDescricao(): string {
-        return 'Página única focada em conversão (vendas, captura de leads, etc.).'
+        return this.nome + `/` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
     }
     getPreco(): number {
         return this.preco

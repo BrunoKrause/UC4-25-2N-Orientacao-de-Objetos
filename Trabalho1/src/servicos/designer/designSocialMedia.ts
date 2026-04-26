@@ -1,13 +1,15 @@
-import { serviceModel } from "../model";
+import { serviceModel, Servico } from "../model";
 
-export class designSocialMedia implements serviceModel {
+export class designSocialMedia implements Servico {
+    nome: string;
     preco: number
     
-    constructor(preco:number) {
+    constructor(nome: string, preco: number) {
+        this.nome = nome
         this.preco = preco
     }
     getDescricao(): string {
-        return 'Criação de posts para Instagram, Facebook, etc.'
+        return this.nome + `/` + 'Criação de posts para Instagram, Facebook, etc.'
     }
     getPreco(): number {
         return this.preco

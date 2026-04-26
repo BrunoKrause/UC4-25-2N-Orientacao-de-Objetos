@@ -1,13 +1,15 @@
-import { serviceModel } from "../model";
+import { serviceModel, Servico } from "../model";
 
-export class rmBackground implements serviceModel {
+export class rmBackground implements Servico {
+    nome: string;
     preco: number
 
-    constructor(preco: number) {
+   constructor(nome: string, preco: number) {
+        this.nome = nome
         this.preco = preco
     }
     getDescricao(): string {
-        return 'Recorte e melhoria geral da imagem.'
+        return this.nome + `/` + 'Recorte e melhoria geral da imagem.'
     }
     getPreco(): number {
         return this.preco

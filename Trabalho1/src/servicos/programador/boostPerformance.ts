@@ -1,12 +1,15 @@
-import { serviceModel } from "../model";
+import { serviceModel, Servico } from "../model";
 
-export class boostPerformance implements serviceModel {
+export class boostPerformance implements Servico {
+    nome: string;
     preco: number
-    constructor(preco: number) {
+
+    constructor(nome: string, preco: number) {
+        this.nome = nome
         this.preco = preco
     }
     getDescricao(): string {
-        return 'Melhoria na velocidade e eficiência de sites ou sistemas.'
+        return this.nome + `/` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
     }
     getPreco(): number {
         return this.preco

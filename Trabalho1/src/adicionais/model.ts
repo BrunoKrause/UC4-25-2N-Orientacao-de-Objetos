@@ -1,4 +1,4 @@
-import { serviceModel } from "../servicos/model";
+import { serviceModel, Servico } from "../servicos/model";
 
 export abstract class Adicional implements serviceModel {
 

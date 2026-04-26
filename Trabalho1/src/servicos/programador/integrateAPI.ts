@@ -1,6 +1,6 @@
-import { serviceModel } from "../model";
+import { serviceModel, Servico } from "../model";
 
-export class integrateAPI implements serviceModel {
+export class integrateAPI implements Servico {
     nome: string;
     preco: number
 
@@ -9,7 +9,7 @@ export class integrateAPI implements serviceModel {
         this.preco = preco
     }
     getDescricao(): string {
-        return 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
+        return this.nome + `/` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
     }
     getPreco(): number {
         return this.preco

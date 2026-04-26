@@ -1,13 +1,15 @@
-import { serviceModel } from "../model";
+import { serviceModel, Servico } from "../model";
 
-export class thumbnail implements serviceModel {
+export class thumbnail implements Servico {
+    nome: string
     preco: number
 
-    constructor(preco: number) {
+    constructor(nome: string, preco: number) {
+        this.nome = nome
         this.preco = preco
     }
     getDescricao(): string {
-        return 'Design de capa chamativa para redes sociais.'
+        return this.nome + `/` + 'Design de capa chamativa para redes sociais.'
     }
     getPreco(): number {
         return this.preco

@@ -1,11 +1,18 @@
-export interface serviceModel {        
+export interface serviceModel {   
+    
+    
     getDescricao(): string
     getPreco(): number
+
 }
 
 export class Servico implements serviceModel {
 
-    constructor(protected nome: string, protected preco: number) {}
+
+    constructor(public nome: string, public preco: number) {
+        this.nome = nome
+        this.preco = preco
+    }
 
     getDescricao(): string {
         return this.nome

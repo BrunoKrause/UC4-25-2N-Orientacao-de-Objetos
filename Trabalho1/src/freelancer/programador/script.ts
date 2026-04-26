@@ -16,7 +16,7 @@ export let devs: freelancer[] = [
             nome: '1 - Fix Bugs',
             preco: 800,
             getDescricao(): string {
-            return this.nome + `/` + 'Identificação e solução de erros em sistemas ou sites existentes.'
+            return this.nome + ` | ` + 'Identificação e solução de erros em sistemas ou sites existentes.'
             },
             getPreco() {
                 return this.preco
@@ -26,7 +26,7 @@ export let devs: freelancer[] = [
             nome: `3 - Landing Page`,
             preco: 500,
             getDescricao(): string {
-            return this.nome + `/` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
+            return this.nome + ` | ` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
             },
             getPreco(): number {
             return this.preco
@@ -42,7 +42,7 @@ export let devs: freelancer[] = [
             nome: '4 - Boost Performance',
             preco: 650,
             getDescricao(): string {
-            return this.nome + `/` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
+            return this.nome + ` | ` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
             },
             getPreco() {
                 return this.preco
@@ -52,7 +52,7 @@ export let devs: freelancer[] = [
             nome: '5 - Site Institucional',
             preco: 1500,
             getDescricao() {
-                return this.nome + `/` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
+                return this.nome + ` | ` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
             },
             getPreco() {
                 return this.preco
@@ -67,7 +67,7 @@ export let devs: freelancer[] = [
             nome: '2 - Integrate API',
             preco: 700,
             getDescricao() {
-                return this.nome + `/` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
+                return this.nome + ` | ` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
             },
             getPreco() {
                 return this.preco
@@ -77,7 +77,7 @@ export let devs: freelancer[] = [
             nome: '4 - Boost Performance',
             preco: 600,
             getDescricao(): string {
-            return this.nome + `/` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
+            return this.nome + ` | ` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
             },
             getPreco() {
                 return this.preco
@@ -94,7 +94,7 @@ export let devs: freelancer[] = [
             nome: '1 - Fix Bugs',
             preco: 1600,
             getDescricao(): string {
-            return this.nome + `/` + 'Identificação e solução de erros em sistemas ou sites existentes.'
+            return this.nome + ` | ` + 'Identificação e solução de erros em sistemas ou sites existentes.'
             },
             getPreco() {
                 return this.preco
@@ -104,7 +104,7 @@ export let devs: freelancer[] = [
             nome: '2 - Integrate API',
             preco: 2000,
             getDescricao() {
-                return this.nome + `/` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
+                return this.nome + ` | ` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
             },
             getPreco() {
                 return this.preco
@@ -114,7 +114,7 @@ export let devs: freelancer[] = [
             nome: `3 - Landing Page`,
             preco: 1400,
             getDescricao(): string {
-            return this.nome + `/` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
+            return this.nome + ` | ` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
             },
             getPreco(): number {
             return this.preco
@@ -124,7 +124,7 @@ export let devs: freelancer[] = [
             nome: '5 - Site Institucional',
             preco: 3800,
             getDescricao() {
-                return this.nome + `/` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
+                return this.nome + ` | ` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
             },
             getPreco() {
                 return this.preco
@@ -141,7 +141,7 @@ export let devs: freelancer[] = [
             nome: '2 - Integrate API',
             preco: 1900,
             getDescricao() {
-                return this.nome + `/` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
+                return this.nome + ` | ` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
             },
             getPreco() {
                 return this.preco
@@ -151,7 +151,7 @@ export let devs: freelancer[] = [
             nome: `3 - Landing Page`,
             preco: 1600,
             getDescricao(): string {
-            return this.nome + `/` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
+            return this.nome + ` | ` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
             },
             getPreco(): number {
             return this.preco
@@ -161,7 +161,7 @@ export let devs: freelancer[] = [
             nome: '4 - Boost Performance',
             preco: 1700,
             getDescricao(): string {
-            return this.nome + `/` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
+            return this.nome + ` | ` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
             },
             getPreco() {
                 return this.preco
@@ -171,7 +171,7 @@ export let devs: freelancer[] = [
             nome: '5 - Site Institucional',
             preco: 4000,
             getDescricao() {
-                return this.nome + `/` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
+                return this.nome + ` | ` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
             },
             getPreco() {
                 return this.preco
@@ -188,7 +188,7 @@ export let devs: freelancer[] = [
             nome: '1 - Fix Bugs',
             preco: 1500,
             getDescricao(): string {
-            return this.nome + `/` + 'Identificação e solução de erros em sistemas ou sites existentes.'
+            return this.nome + ` | ` + 'Identificação e solução de erros em sistemas ou sites existentes.'
             },
             getPreco() {
                 return this.preco
@@ -198,7 +198,7 @@ export let devs: freelancer[] = [
             nome: '2 - Integrate API',
             preco: 2100,
             getDescricao() {
-                return this.nome + `/` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
+                return this.nome + ` | ` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
             },
             getPreco() {
                 return this.preco
@@ -208,7 +208,7 @@ export let devs: freelancer[] = [
             nome: `3 - Landing Page`,
             preco: 1700,
             getDescricao(): string {
-            return this.nome + `/` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
+            return this.nome + ` | ` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
             },
             getPreco(): number {
             return this.preco
@@ -218,7 +218,7 @@ export let devs: freelancer[] = [
             nome: '4 - Boost Performance',
             preco: 2000,
             getDescricao(): string {
-            return this.nome + `/` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
+            return this.nome + ` | ` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
             },
             getPreco() {
                 return this.preco
@@ -228,7 +228,7 @@ export let devs: freelancer[] = [
             nome: '5 - Site Institucional',
             preco: 5000,
             getDescricao() {
-                return this.nome + `/` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
+                return this.nome + ` | ` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
             },
             getPreco() {
                 return this.preco
@@ -245,7 +245,7 @@ export let devs: freelancer[] = [
             nome: '1 - Fix Bugs',
             preco: 1100,
             getDescricao(): string {
-            return this.nome + `/` + 'Identificação e solução de erros em sistemas ou sites existentes.'
+            return this.nome + ` | ` + 'Identificação e solução de erros em sistemas ou sites existentes.'
             },
             getPreco() {
                 return this.preco
@@ -255,7 +255,7 @@ export let devs: freelancer[] = [
             nome: `3 - Landing Page`,
             preco: 900,
             getDescricao(): string {
-            return this.nome + `/` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
+            return this.nome + ` | ` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
             },
             getPreco(): number {
             return this.preco
@@ -265,7 +265,7 @@ export let devs: freelancer[] = [
             nome: '5 - Site Institucional',
             preco: 2750,
             getDescricao() {
-                return this.nome + `/` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
+                return this.nome + ` | ` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
             },
             getPreco() {
                 return this.preco
@@ -282,7 +282,7 @@ export let devs: freelancer[] = [
             nome: '2 - Integrate API',
             preco: 1300,
             getDescricao() {
-                return this.nome + `/` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
+                return this.nome + ` | ` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
             },
             getPreco() {
                 return this.preco
@@ -292,7 +292,7 @@ export let devs: freelancer[] = [
             nome: `3 - Landing Page`,
             preco: 1000,
             getDescricao(): string {
-            return this.nome + `/` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
+            return this.nome + ` | ` + 'Página única focada em conversão (vendas, captura de leads, etc.).'
             },
             getPreco(): number {
             return this.preco
@@ -302,7 +302,7 @@ export let devs: freelancer[] = [
             nome: '4 - Boost Performance',
             preco: 1000,
             getDescricao(): string {
-            return this.nome + `/` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
+            return this.nome + ` | ` + 'Melhoria na velocidade e eficiência de sites ou sistemas.'
             },
             getPreco() {
                 return this.preco
@@ -319,7 +319,7 @@ export let devs: freelancer[] = [
             nome: '1 - Fix Bugs',
             preco: 900,
             getDescricao(): string {
-            return this.nome + `/` + 'Identificação e solução de erros em sistemas ou sites existentes.'
+            return this.nome + ` | ` + 'Identificação e solução de erros em sistemas ou sites existentes.'
             },
             getPreco() {
                 return this.preco
@@ -329,7 +329,7 @@ export let devs: freelancer[] = [
             nome: '2 - Integrate API',
             preco: 1300,
             getDescricao() {
-                return this.nome + `/` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
+                return this.nome + ` | ` + 'Conectar o sistema a serviços externos (pagamentos, login social, etc.).'
             },
             getPreco() {
                 return this.preco
@@ -339,7 +339,7 @@ export let devs: freelancer[] = [
             nome: '5 - Site Institucional',
             preco: 2300,
             getDescricao() {
-                return this.nome + `/` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
+                return this.nome + ` | ` + 'Criação de um site completo para empresas, com páginas como Home, Sobre e Contato.'
             },
             getPreco() {
                 return this.preco
